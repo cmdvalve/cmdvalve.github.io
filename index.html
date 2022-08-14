@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Homepage</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="album.html">Album</a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="names">
+                    JENNIFER | BRYCE 
+                </div>
+            </div>
+        </div>
+    <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="subtitle">Our first time skiing in the middle of winter. It might have been cold, but it was warmer with eachother.</div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="subtitle">We spent a lot of time at American Dream. Spending time with you was the real dream.</div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="subtitle">Good old yearling winter weekend. Thanks to Paul for taking the picture, Lowery, Josh, Adler, but most of all you.</div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="subtitle">I love this picture. You look beautiful and make me look like a basketball player :).</div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="subtitle">Our first picture in the beautiful city of Melbourne. Glad you got to me my family.</div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="subtitle">It was great to get to spend time at the winter ball. A pleasure to meet your friends.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    </body>
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+  
+    portfolioItems.forEach(portfolioItem => {
+      portfolioItem.addEventListener('mouseover', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.add('image-blur');
+      });
+  
+      portfolioItem.addEventListener('mouseout', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.remove('image-blur');
+      });
+    });
+  
+  </script>
+
+</html>
